@@ -38,11 +38,6 @@
       🧑 Autor
     </a>
   </li>
-  <li>
-    <a href="#licença">
-      📝 Licença
-    </a>
-  </li>
 </ul>
 
 <p align="center">
@@ -129,7 +124,3 @@ code .
     </td>
   </tr>
 </table>
-
-## 📝 Licença
-
-O projeto está sob licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
