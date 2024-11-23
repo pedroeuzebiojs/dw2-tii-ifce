@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --background: hsl(222.2 84% 4.9%);
+  --foreground: hsl(210 40% 98%);
+  --primary: hsl(217.2 91.2% 59.8%);
+  --primary-foreground: hsl(222.2 47.4% 11.2%);
+  --secondary: hsl(217.2 32.6% 17.5%);
+}
+
+body {
+  background: var(--background);
+
+  min-height: 100vh;
+}
+
+body * {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+
+  color: var(--foreground);
+}
+
+#app {
+  width: 100%;
+  max-width: 58.8rem;
+  margin: 5.6rem auto 0;
+}
+
+form {
+  padding: 3rem;
+
+  width: 100%;
+  max-width: 38.4rem;
+  margin: auto;
+}
+
+form fieldset {
+  border: none;
+}
+
+form legend {
+  font-size: 3rem;
+  font-weight: 600;
+
+  text-align: center;
+
+  margin-bottom: 2.4rem;
+
+  color: var(--primary);
+}
+
+form .input-wrapper {
+  margin-bottom: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+form input {
+  background: var(--secondary);
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.2rem;
+
+  border-radius: 0.4rem;
+}
+
+form input:focus {
+  background: var(--primary-foreground);
+}
+
+form button {
+  width: 100%;
+  background: var(--secondary);
+  border: 1px solid var(--primary-foreground);
+  padding: 1.2rem 2.4rem;
+  margin-bottom: 2.4rem;
+
+  border-radius: 0.8rem;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+#list-profiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.profile {
+  text-align: center;
+
+  border: 1px solid var(--foreground);
+  border-radius: 0.8rem;
+
+  width: 100%;
+  max-width: 24.2rem;
+
+  padding: 2.4rem;
+
+  background: var(--secondary);
+}
+
+.profile img {
+  border-radius: 50%;
+
+  width: 8rem;
+  height: 8rem;
+
+  object-fit: cover;
+
+  margin-bottom: 1.2rem;
+}
+
+form button:hover {
+  background: var(--primary-foreground);
+  border: 1.5px solid var(--foreground);
+}

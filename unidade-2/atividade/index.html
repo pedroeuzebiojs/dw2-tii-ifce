@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Atividade da Unidade 2 da Disciplina de Desenvolvimento Web II do curso
+      Técnico em Informática para Internet do IFCE.
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <form>
+        <fieldset>
+          <legend>Gerador de Perfis</legend>
+
+          <div class="input-wrapper">
+            <label for="number-profiles">Digite a quantidade de perfis: </label>
+            <input
+              type="number"
+              name="number-profiles"
+              id="number-profiles"
+              min="1"
+              max="20"
+              placeholder="Quantidade de perfis"
+            />
+          </div>
+
+          <div id="list-profiles"></div>
+
+          <button type="submit">Gerar</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
