@@ -1,0 +1,448 @@
+@import url("./global.css");
+
+.link-default {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.link-default:hover {
+  color: var(--color-primary);
+  background: none;
+}
+
+.about,
+.services,
+.skills {
+  font-family: "Poppins", sans-serif;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.max-width {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 8rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 3rem 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  padding: 15px 0;
+  background-color: var(--color-primary);
+}
+
+.navbar.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.menu li a {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3 ease;
+}
+
+.menu li a i {
+  font-size: 1.8rem;
+}
+
+.menu li a:hover {
+  color: var(--color-primary);
+}
+
+.link-image-cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+.menu-btn i {
+  font-size: 2.3rem;
+}
+
+.menu-cart {
+  display: none;
+}
+
+.menu-cart i {
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+.home {
+  display: flex;
+  background-image: url(../img/fundo-header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+  background-attachment: fixed;
+}
+
+.home .max-width {
+  margin: auto 0 auto 3rem;
+}
+
+.home .home-content .text-1 {
+  font-size: 2.7rem;
+}
+
+.home .home-content .text-2 {
+  font-size: 7.5rem;
+  font-weight: bold;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+  font-size: 4rem;
+  margin: 5px 0;
+}
+
+.home-content a {
+  font-size: 2.5rem;
+  padding: 1.2rem 3.6rem 1.2rem 3.6rem;
+}
+
+.home-content a:hover {
+  background: none;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about .about-content .right {
+  width: 50%;
+}
+
+.about .about-content .right .text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.services {
+  color: #fff;
+  background: #111;
+}
+
+.services .serv-content .card {
+  width: calc(33% - 2rem);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services img {
+  width: 50px;
+  height: 50px;
+}
+
+.services .serv-content .card:hover {
+  background: var(--color-primary);
+}
+
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+  font-size: 50px;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+
+.services .serv-content .card .text {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.skills .skills-content .column {
+  width: calc(50% - 3rem);
+}
+
+.skills .skills-content .left {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills .skills-content .left p {
+  text-align: justify;
+  font-weight: 400;
+}
+
+.skills .skills-content .left a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.8rem 1.6rem;
+}
+
+.skills .skills-content .right {
+  width: 45%;
+}
+
+.skills .skills-content .right img {
+  border-radius: 6px;
+}
+
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar .menu-cart {
+    display: flex;
+  }
+
+  .navbar .menu-cart span {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    background: #d6471c;
+    padding: 0px 6px 0px 5px;
+    border-radius: 5px;
+    margin: 0px 0px 0px 5px;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  .menu-btn {
+    display: block;
+    z-index: 2;
+  }
+
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 8rem;
+    transition: all 0.3s ease;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 7rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 3.5rem;
+  }
+
+  .home .home-content a {
+    font-size: 2.3rem;
+    padding: 1rem 3rem;
+  }
+
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .max-width {
+    max-width: 1168px;
+  }
+}
+
+@media (max-width: 900px) {
+  .max-width {
+    padding: 0 5rem;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .about-content .right {
+    text-align-last: center;
+  }
+
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .skills .skills-content .left {
+    text-align: center;
+  }
+
+  .skills .skills-content .right {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 6rem;
+  }
+
+  .skills .skills-content .right img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .skills .skills-content .left {
+    text-align-last: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-width {
+    padding: 0 2.3rem;
+  }
+
+  .navbar a h1 {
+    font-size: 2.2rem;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 6rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 3.2rem;
+  }
+
+  .home .home-content a {
+    font-size: 2rem;
+  }
+
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 1.9rem;
+  }
+
+  .services .serv-content .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 488px) {
+  .home .home-content .text-2 {
+    font-size: 5rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 2.7rem;
+  }
+
+  .about .about-content .left img,
+  .skills .skills-content .right img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .about .about-content .left img,
+  .skills .skills-content .right img {
+    height: 250px;
+    width: 250px;
+  }
+}
